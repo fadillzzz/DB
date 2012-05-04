@@ -1,0 +1,3 @@
+A database class originally built for Mysidia Adoptables. It can be used for anything else, however.
+
+It uses PDO to connect to the database.
