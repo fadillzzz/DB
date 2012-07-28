@@ -5,11 +5,11 @@
  *
  * This is the Mysidia Adoptables database class.
  *
- * @package		Mysidia Adoptables
+ * @package	Mysidia Adoptables
  * @subpackage	Drivers
  * @category	Database
- * @since		1.3.2
- * @author		Mysidia Dev Team
+ * @since	1.3.2
+ * @author	Mysidia Dev Team
  */
 class DB extends PDO
 {
@@ -24,7 +24,7 @@ class DB extends PDO
 	/**
 	 * Keep track of total rows from each query.
 	 *
-	 * @access  private
+	 * @access  	private
 	 * @var 	array
 	 */
 	private $_total_rows = array();
@@ -339,21 +339,21 @@ class DB extends PDO
 	}
 
 	/**
-     * Get total rows affected by previous queries.
+	 * Get total rows affected by previous queries.
 	 *
-     * @return int
-     */
-    public function get_total_rows()
-    {
-        return $this->_total_rows[$this->_active];
-    }
+     	 * @return int
+     	 */
+    	public function get_total_rows()
+    	{
+        	return $this->_total_rows[$this->_active];
+    	}
 
 	/**
 	 * Executes the currently active query.
 	 *
 	 * @see		self::$_query
 	 * @param	bool	$keep_query	Whether or not to keep the query for later use
-	 * @return	object				A PDOStatement object
+	 * @return	object			A PDOStatement object
 	 */
 	public function run($keep_query = FALSE)
 	{
